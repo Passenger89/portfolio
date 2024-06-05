@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: Lato, serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+section {
+  width: 80%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+
+/* General Styles for Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    padding: 0 30px;
+    background-color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    box-shadow: 2px 0 3px #333;
+  }
+  
+  nav .logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  /* Ensure the ul is displayed as flex */
+  nav ul {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    padding: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Hide mobile nav on desktop */
+.mobile-nav {
+    display: none;
+  }
+  
+ /* Hamburger Menu */
+.menu-toggle {
+    display: flex; /* Make sure it's visible */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+  }
+  
+  /* Slide-out Menu */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    height: 100%;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+  }
+  
+  
+  .nav-links li {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 680px) {
+    .desktop-nav {
+        display: none;
+      }
+    
+      .mobile-nav {
+        display: flex;
+        align-items: center;
+      }
+    
+      .nav-links.active {
+        display: flex;
+        right: 0;
+      }
+  }
+  
+  
+  
+
+.hello {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello-text {
+  display: block;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.hello-text h2 {
+  font-size: 4rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#name {
+  font-size: 7rem;
+  color: royalblue;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hello-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.hello-btn button {
+  color: #333;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 4px solid black;
+  border-radius: 50px;
+}
+
+.portfolio {
+  flex-direction: column;
+}
+
+.projects-wrapper {
+  display: grid;
+  min-width: 80%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 600px;
+  padding: 50px;
+  gap: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 400px;
+  min-height: 600px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.project-image {
+  width: 80%;
+  flex-shrink: 0;
+}
+.project-image img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.project-description {
+  width: 80%;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  min-width: 80%;
+}
+
+.project-links button {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  min-width: 120px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutme {
+  flex-direction: column;
+  gap: 50px;
+  padding-block: 50px;
+  gap: 50px;
+}
+
+.aboutme-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 80%;
+}
+
+.image-me {
+  border: 5px solid black;
+  border-radius: 40% 0 40% 0;
+}
+
+.aboutme-text {
+  width: 50%;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.tech-row {
+  display: flex;
+}
+.tech-row > * {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-category {
+  width: 39.9%;
+  flex-direction: row;
+  justify-content: center;
+  margin-inline: 10px;
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.tech-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.tech-item {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.hobbies-content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hobbies-icons {
+  flex-basis: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hobbies-text {
+  flex-basis: 40%;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resume h1 {
+  font-size: 64px;
+}
+
+.resume-buttons {
+  display: flex;
+  gap: 10px;
+}
+.resume-buttons button {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  min-width: 120px;
+}
+
+section.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+div.contact-form {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  display: none;
+}
+
+.submit-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.submit-btn i {
+  margin-right: 5px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 15px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .projects-wrapper {
+    grid-template-columns: 1fr;
+    margin-inline: auto;
+    min-width: 100%;
+    padding: 0;
+  }
+  .project {
+    min-width: 100%;
+  }
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hello-text h1 {
+    font-size: 4rem;
+  }
+  .hello-text h2 {
+    font-size: 2rem;
+  }
+  .aboutme-wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .aboutme-text {
+    width: 80%;
+  }
+
+  .tech-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tech-category {
+    width: 90%;
+  }
+
+  .hobbies h1 {
+    text-align: center;
+  }
+
+  .hobbies-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 90vh;
+  }
+
+  .hobbies-text {
+    width: 100%;
+  }
+}
