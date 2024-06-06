@@ -15,169 +15,182 @@
     />
   </head>
   <body>
-    <nav class="desktop-nav">
-      <a class="logo" href="#hello">W</a>
-      <ul>
-        <li><a href="#portfolio">portfolio</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#resume">resume</a></li>
-        <li><a href="#contact">contact</a></li>
-        <li><a href="https://github.com/passenger89" target="_blank">github</a></li>
-        <li><a href="#" target="_blank">linkedin</a></li>
+    <nav class="nav nav--desktop">
+      <a class="nav__logo" href="#hello">W</a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#portfolio">portfolio</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#resume">resume</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">contact</a>
+        </li>
+        <li class="nav__item">
+          <a
+            class="nav__link"
+            href="https://github.com/passenger89"
+            target="_blank"
+            >github</a
+          >
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#" target="_blank">linkedin</a>
+        </li>
       </ul>
     </nav>
-    
-    <nav class="mobile-nav">
-      <a class="logo" href="#hello">W</a>
-      <div class="menu-toggle">
-        <div class="menu-bar"></div>
-        <div class="menu-bar"></div>
-        <div class="menu-bar"></div>
+
+    <nav class="nav nav--mobile">
+      <a class="nav__logo" href="#hello">W</a>
+      <div class="nav__toggle">
+        <div class="nav__bar"></div>
+        <div class="nav__bar"></div>
+        <div class="nav__bar"></div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#portfolio">portfolio</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#resume">resume</a></li>
-        <li><a href="#contact">contact</a></li>
-        <li><a href="https://github.com/passenger89" target="_blank">github</a></li>
-        <li><a href="#" target="_blank">linkedin</a></li>
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#portfolio">portfolio</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#resume">resume</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">contact</a>
+        </li>
+        <li class="nav__item">
+          <a
+            class="nav__link"
+            href="https://github.com/passenger89"
+            target="_blank"
+            >github</a
+          >
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#" target="_blank">linkedin</a>
+        </li>
       </ul>
     </nav>
     <main>
       <section id="hello" class="hello">
-        <div class="hello-text">
-          <h2>Hello! My name is</h2>
-          <h1 id="name">William.</h1>
-          <h2>I'm a full-stack developer.</h2>
+        <div class="hello__text">
+          <h2 class="hello__subtitle">Hello! My name is</h2>
+          <h1 class="hello__name" id="name">William.</h1>
+          <h2 class="hello__subtitle">I'm a full-stack developer.</h2>
         </div>
-        <div class="hello-btn"><button>View Portfolio</button></div>
+        <div class="hello__btn">
+          <button class="hello__btn-button">View Portfolio</button>
+        </div>
       </section>
       <section id="portfolio" class="portfolio">
-        <h1>Portfolio</h1>
+        <h1 class="portfolio__title">Portfolio</h1>
 
-        <div class="projects-wrapper">
-          <div class="project project-one">
-            <h2 class="project-title">Title</h2>
-            <div class="project-image">
+        <div class="portfolio__wrapper">
+          <div class="portfolio__project project project--one">
+            <h2 class="project__title">Title</h2>
+            <div class="project__image">
               <img src="./assets/project1.jpg" alt="" />
             </div>
-            <div class="project-description">
-              <p class="p-project">
+            <div class="project__description">
+              <p class="project__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
                 dicta?
               </p>
-              <p class="p-technologies">Lorem ipsum dolor sit amet.</p>
+              <p class="project__technologies">Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="project-links">
+            <div class="project__links">
               <a href="#"
-                ><button>
+                ><button class="project__btn">
                   Try Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i></button
               ></a>
               <a href="#"
-                ><button>View Code <i class="fa-brands fa-github"></i></button
+                ><button class="project__btn">
+                  View Code <i class="fa-brands fa-github"></i></button
               ></a>
             </div>
           </div>
-          <div class="project project-two">
-            <h2 class="project-title">Title</h2>
-            <div class="project-image">
+          <div class="portfolio__project project project--two">
+            <h2 class="project__title">Title</h2>
+            <div class="project__image">
               <img src="./assets/project2.jpg" alt="" />
             </div>
-            <div class="project-description">
-              <p class="p-project">
+            <div class="project__description">
+              <p class="project__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
                 dicta?
               </p>
-              <p class="p-technologies">Lorem ipsum dolor sit amet.</p>
+              <p class="project__technologies">Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="project-links">
+            <div class="project__links">
               <a href="#"
-                ><button>
+                ><button class="project__btn">
                   Try Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i></button
               ></a>
               <a href="#"
-                ><button>View Code <i class="fa-brands fa-github"></i></button
+                ><button class="project__btn">
+                  View Code <i class="fa-brands fa-github"></i></button
               ></a>
             </div>
           </div>
-          <div class="project project-three">
-            <h2 class="project-title">Title</h2>
-            <div class="project-image">
+          <div class="portfolio__project project project--three">
+            <h2 class="project__title">Title</h2>
+            <div class="project__image">
               <img src="./assets/project3.jpg" alt="" />
             </div>
-            <div class="project-description">
-              <p class="p-project">
+            <div class="project__description">
+              <p class="project__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
                 dicta?
               </p>
-              <p class="p-technologies">Lorem ipsum dolor sit amet.</p>
+              <p class="project__technologies">Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="project-links">
+            <div class="project__links">
               <a href="#"
-                ><button>
+                ><button class="project__btn">
                   Try Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i></button
               ></a>
               <a href="#"
-                ><button>View Code <i class="fa-brands fa-github"></i></button
+                ><button class="project__btn">
+                  View Code <i class="fa-brands fa-github"></i></button
               ></a>
             </div>
           </div>
-          <div class="project project-four">
-            <h2 class="project-title">Title</h2>
-            <div class="project-image">
+          <div class="portfolio__project project project--four">
+            <h2 class="project__title">Title</h2>
+            <div class="project__image">
               <img src="./assets/project4.jpg" alt="" />
             </div>
-            <div class="project-description">
-              <p class="p-project">
+            <div class="project__description">
+              <p class="project__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
                 dicta?
               </p>
-              <p class="p-technologies">Lorem ipsum dolor sit amet.</p>
+              <p class="project__technologies">Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="project-links">
+            <div class="project__links">
               <a href="#"
-                ><button>
+                ><button class="project__btn">
                   Try Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i></button
               ></a>
               <a href="#"
-                ><button>View Code <i class="fa-brands fa-github"></i></button
-              ></a>
-            </div>
-          </div>
-          <div class="project project-five">
-            <h2 class="project-title">Title</h2>
-            <div class="project-image">
-              <img src="./assets/project5.jpg" alt="" />
-            </div>
-            <div class="project-description">
-              <p class="p-project">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                dicta?
-              </p>
-              <p class="p-technologies">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="project-links">
-              <a href="#"
-                ><button>
-                  Try Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i></button
-              ></a>
-              <a href="#"
-                ><button>View Code <i class="fa-brands fa-github"></i></button
+                ><button class="project__btn">
+                  View Code <i class="fa-brands fa-github"></i></button
               ></a>
             </div>
           </div>
         </div>
       </section>
-      <section id="about" class="aboutme">
-        <h1>About Me</h1>
-        <div class="aboutme-wrapper">
-          <img class="image-me" src="./assets/me.png" alt="" />
-          <p class="aboutme-text">
+      <section id="about" class="about">
+        <h1 class="about__title">About Me</h1>
+        <div class="about__wrapper">
+          <img class="about__image" src="./assets/me.png" alt="" />
+          <p class="about__text">
             Hi! I'm William Nicholson, a full-stack web developer based in
             Leeds. After working in retail for 10 years, I've decided to take
             the leap to pursue a career in web development. I enrolled in an
@@ -188,113 +201,113 @@
           </p>
         </div>
 
-        <div class="technologies">
-          <h2>Technologies I've Worked With</h2>
-          <div class="tech-row">
-            <div class="tech-category frontend">
-              <div class="tech-title">Front-end</div>
-              <div class="tech-item">
-                <img src="./assets/technologies/reactlogo2.png" alt="" />
+        <div class="about__technologies">
+          <h2 class="about__subtitle">Technologies I've Worked With</h2>
+          <div class="about__tech-row">
+            <div class="about__tech-category about__tech-category--frontend">
+              <div class="about__tech-category-title">Front-end</div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/reactlogo2.png" alt="React logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/reduxlogo2.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/reduxlogo2.png" alt="Redux logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/htmllogo.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/htmllogo.png" alt="Html logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/csslogo.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/csslogo.png" alt="css logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/bootstraplogo.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/bootstraplogo.png" alt="Bootstrap logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/semantic.png" alt="" />
-              </div>
-            </div>
-            <div class="tech-category backend">
-              <div class="tech-title">Back-end</div>
-              <div class="tech-item">
-                <img src="./assets/technologies/nodelogo.png" alt="" />
-              </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/expresslogo2.png" alt="" />
-              </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/sequelize.png" alt="" />
-              </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/postgreslogo.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/semantic.png" alt="Semantic UI logo" />
               </div>
             </div>
-            <div class="tech-category devops">
-              <div class="tech-title">DevOps</div>
-              <div class="tech-item">
-                <img src="./assets/technologies/gitlogo.png" alt="" />
+            <div class="about__tech-category about__tech-category--backend">
+              <div class="about__tech-category-title">Back-end</div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/nodelogo.png" alt="Node logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/githublogo.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/expresslogo2.png" alt="Express logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/npm.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/sequelize.png" alt="Sequelize logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/webpack.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/postgreslogo.png" alt="Postgres logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/heroku.png" alt="" />
+            </div>
+            <div class="about__tech-category about__tech-category--devops">
+              <div class="about__tech-category-title">DevOps</div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/gitlogo.png" alt="Git logo" />
+              </div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/githublogo.png" alt="Github logo" />
+              </div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/npm.png" alt="npm logo" />
+              </div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/webpack.png" alt="Webpack logo" />
+              </div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/heroku.png" alt="Heroku logo" />
               </div>
             </div>
           </div>
-          <div class="tech-row">
-            <div class="tech-category languages">
-              <div class="tech-title">Languages</div>
-              <div class="tech-item">
-                <img src="./assets/technologies/jslogo.png" alt="" />
+          <div class="about__tech-row">
+            <div class="about__tech-category about__tech-category--languages">
+              <div class="about__tech-category-title">Languages</div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/jslogo.png" alt="javascript logo" />
               </div>
             </div>
-            <div class="tech-category tools">
-              <div class="tech-title">Tools</div>
-              <div class="tech-item">
-                <img src="./assets/technologies/vscode.png" alt="" />
+            <div class="about__tech-category about__tech-category--tools">
+              <div class="about__tech-category-title">Tools</div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/vscode.png" alt="vscode logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/postman.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/postman.png" alt="postman logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/postico.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/postico.png" alt="postico logo" />
               </div>
             </div>
-            <div class="tech-category testing">
-              <div class="tech-title">Testing</div>
-              <div class="tech-item">
-                <img src="./assets/technologies/mocha.png" alt="" />
+            <div class="about__tech-category about__tech-category--testing">
+              <div class="about__tech-category-title">Testing</div>
+              <div class="about__tech-item">
+                <img src="./assets/technologies/mocha.png" alt="mocha logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/chai.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/chai.png" alt="chai logo" />
               </div>
-              <div class="tech-item">
-                <img src="./assets/technologies/jasmine.png" alt="" />
+              <div class="about__tech-item">
+                <img src="./assets/technologies/jasmine.png" alt="jasmine logo" />
               </div>
             </div>
           </div>
         </div>
-        <div class="hobbies">
-          <h1>Hobbies & Interests</h1>
-          <div class="hobbies-content-wrapper">
-            <div class="hobbies-icons">
-              <div class="icon">
+        <div class="about__hobbies">
+          <h1 class="about__hobbies-title">Hobbies & Interests</h1>
+          <div class="about__hobbies-wrapper">
+            <div class="about__hobbies-icons">
+              <div class="about__hobbies-icon">
                 <img src="./assets/icons/game.png" alt="" />
               </div>
-              <div class="icon">
+              <div class="about__hobbies-icon">
                 <img src="./assets/icons/noodles.png" alt="" />
               </div>
-              <div class="icon">
+              <div class="about__hobbies-icon">
                 <img src="./assets/icons/travel.png" alt="" />
               </div>
-              <div class="icon"><img src="./assets/icons/tv.png" alt="" /></div>
+              <div class="about__hobbies-icon"><img src="./assets/icons/tv.png" alt="" /></div>
             </div>
-            <div class="hobbies-text">
+            <div class="about__hobbies-text">
               <p>
                 Besides my passion for coding, I love to play video games,
                 specifically RPGs. I also love to travel, weight-lift, and drink
@@ -306,64 +319,61 @@
         </div>
       </section>
       <section id="resume" class="resume">
-        <h1>Resume</h1>
-        <div class="resume-buttons">
+        <h1 class="resume__title">Resume</h1>
+        <div class="resume__buttons">
           <a href="#"
-            ><button>
+            ><button class="resume__btn">
               View Resume <i class="fa-regular far fa-file-pdf"></i></button
           ></a>
           <a href="#"
-            ><button>
+            ><button class="resume__btn">
               Download Resume
               <i class="fa fa-regular fas fa-download"></i></button
           ></a>
         </div>
       </section>
       <section id="contact" class="contact">
-        <h1>Contact</h1>
-        <div class="contact-form">
-          <form class="contact-form" novalidate>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
-              <div class="error-message">Please enter your name.</div>
+        <h1 class="contact__title">Contact</h1>
+        <div class="contact__form-wrapper">
+          <form class="contact__form" novalidate>
+            <div class="contact__form-group">
+              <label for="name" class="contact__label">Name</label>
+              <input type="text" id="name" name="name" class="contact__input" required />
+              <div class="contact__error-message">Please enter your name.</div>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-              <div class="error-message">
+            <div class="contact__form-group">
+              <label for="email" class="contact__label">Email</label>
+              <input type="email" id="email" name="email" class="contact__input" required />
+              <div class="contact__error-message">
                 Please enter a valid email address.
               </div>
             </div>
-            <div class="form-group">
-              <label for="message">Message</label>
+            <div class="contact__form-group">
+              <label for="message" class="contact__label">Message</label>
               <textarea
                 id="message"
                 name="message"
+                class="contact__textarea"
                 rows="5"
                 required
               ></textarea>
-              <div class="error-message">Please enter your message.</div>
+              <div class="contact__error-message">Please enter your message.</div>
             </div>
-            <button type="submit" class="submit-btn">
+            <button type="submit" class="contact__btn">
               <i class="fas fa-paper-plane"></i> Send
             </button>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-wrapper">
-        <div class="footer-icons">
-          <a href="">
-            <div class="footer-icon-container"><img src="" alt="" /></div> </a
-          ><a href="">
-            <div class="footer-icon-container"><img src="" alt="" /></div> </a
-          ><a href="">
-            <div class="footer-icon-container"><img src="" alt="" /></div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__icons">
+          <a href="https://github.com/passenger89" target="_blank">
+            <img class="footer__icons-icon" src="./assets/technologies/githublogo.png" alt="GitHub Icon" />
           </a>
         </div>
-        <div class="footer-text">
+        <div class="footer__text">
           <p>
             &copy; <span id="currentYear"></span> William Nicholson. All rights
             reserved.

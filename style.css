@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 p {
@@ -23,103 +23,99 @@ section {
 
 /* General Styles for Navigation */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    z-index: 100;
-    padding: 0 30px;
-    background-color: white;
-    font-size: 0.875rem;
-    font-weight: 600;
-    box-shadow: 2px 0 3px #333;
-  }
-  
-  nav .logo {
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-  
-  /* Ensure the ul is displayed as flex */
-  nav ul {
-    display: flex;
-    gap: 5px;
-    justify-content: space-between;
-    list-style: none;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    padding: 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 100;
+  padding: 0 30px;
+  background-color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 2px 0 3px #333;
+}
+
+nav .logo {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Ensure the ul is displayed as flex */
+nav ul {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hide mobile nav on desktop */
+.nav--mobile {
+  display: none;
+}
+
+/* Hamburger Menu */
+.nav__toggle {
+  display: flex; /* Make sure it's visible */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav__bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* Slide-out Menu */
+.nav__links {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  right: -100%;
+  height: 100%;
+  width: 200px;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+}
+
+.nav__links li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 680px) {
+  .nav--desktop {
+    display: none;
   }
 
-  /* Hide mobile nav on desktop */
-.mobile-nav {
-    display: none;
+  .nav--mobile {
+    display: flex;
+    align-items: center;
   }
-  
- /* Hamburger Menu */
-.menu-toggle {
-    display: flex; /* Make sure it's visible */
-    flex-direction: column;
-    cursor: pointer;
+
+  .nav__links.active {
+    display: flex;
+    right: 0;
   }
-  
-  .menu-bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-  }
-  
-  /* Slide-out Menu */
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    height: 100%;
-    width: 200px;
-    background-color: white;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-    transition: right 0.3s ease;
-  }
-  
-  
-  .nav-links li {
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  /* Media Query for Mobile */
-  @media (max-width: 680px) {
-    .desktop-nav {
-        display: none;
-      }
-    
-      .mobile-nav {
-        display: flex;
-        align-items: center;
-      }
-    
-      .nav-links.active {
-        display: flex;
-        right: 0;
-      }
-  }
-  
-  
-  
+}
 
 .hello {
   flex-direction: column;
@@ -127,13 +123,13 @@ nav {
   justify-content: center;
 }
 
-.hello-text {
+.hello__text {
   display: block;
   line-height: 1.2;
   font-weight: 500;
 }
 
-.hello-text h2 {
+.hello__subtitle {
   font-size: 4rem;
   padding-left: 20px;
   padding-right: 20px;
@@ -146,14 +142,14 @@ nav {
   padding-right: 20px;
 }
 
-.hello-btn {
+.hello__btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
 }
 
-.hello-btn button {
+.hello__btn-button {
   color: #333;
   padding: 15px;
   font-size: 1.3rem;
@@ -166,7 +162,7 @@ nav {
   flex-direction: column;
 }
 
-.projects-wrapper {
+.portfolio__wrapper {
   display: grid;
   min-width: 80%;
   grid-template-columns: repeat(2, 1fr);
@@ -175,7 +171,7 @@ nav {
   gap: 10px;
 }
 
-.project {
+.portfolio__project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,26 +182,26 @@ nav {
   border: 1px solid black;
 }
 
-.project-image {
+.project__image {
   width: 80%;
   flex-shrink: 0;
 }
-.project-image img {
+.project__image img {
   width: 100%;
   flex-shrink: 0;
 }
 
-.project-description {
+.project__description {
   width: 80%;
 }
 
-.project-links {
+.project__links {
   display: flex;
   justify-content: space-around;
   min-width: 80%;
 }
 
-.project-links button {
+.project__btn {
   border: 3px solid black;
   border-radius: 15px;
   padding: 5px;
@@ -216,30 +212,30 @@ nav {
   align-items: center;
 }
 
-.aboutme {
+.about {
   flex-direction: column;
   gap: 50px;
   padding-block: 50px;
   gap: 50px;
 }
 
-.aboutme-wrapper {
+.about__wrapper {
   display: flex;
   justify-content: center;
   gap: 50px;
   width: 80%;
 }
 
-.image-me {
+.about__image {
   border: 5px solid black;
   border-radius: 40% 0 40% 0;
 }
 
-.aboutme-text {
+.about__text {
   width: 50%;
 }
 
-.technologies {
+.about__technologies {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,16 +244,16 @@ nav {
   width: 80%;
 }
 
-.tech-row {
+.about__tech-row {
   display: flex;
 }
-.tech-row > * {
+.about__tech-row > * {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.tech-category {
+.about__tech-category {
   width: 39.9%;
   flex-direction: row;
   justify-content: center;
@@ -266,7 +262,7 @@ nav {
   padding-bottom: 10px;
 }
 
-.tech-title {
+.about__tech-category-title {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -276,7 +272,7 @@ nav {
   color: white;
 }
 
-.tech-item {
+.about__tech-item {
   display: flex;
   width: 64px;
   height: 64px;
@@ -284,7 +280,7 @@ nav {
   align-items: center;
 }
 
-.hobbies {
+.about__hobbies {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,12 +288,12 @@ nav {
   margin-top: 50px;
 }
 
-.hobbies-content-wrapper {
+.about__hobbies-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.hobbies-icons {
+.about__hobbies-icons {
   flex-basis: 40%;
 
   display: flex;
@@ -305,7 +301,7 @@ nav {
   align-items: center;
   gap: 10px;
 }
-.hobbies-text {
+.about__hobbies-text {
   flex-basis: 40%;
 }
 
@@ -314,44 +310,44 @@ nav {
   flex-direction: column;
   gap: 10px;
 }
-.resume h1 {
+.resume__title {
   font-size: 64px;
 }
 
-.resume-buttons {
+.resume__buttons {
   display: flex;
   gap: 10px;
 }
-.resume-buttons button {
+.resume__btn {
   border: 3px solid black;
   border-radius: 15px;
   padding: 5px;
   min-width: 120px;
 }
 
-section.contact {
+.contact {
   display: flex;
   flex-direction: column;
 }
 
-.contact-form .form-group {
+.contact__form .contact__form-group {
   margin-bottom: 20px;
   position: relative;
 }
 
-div.contact-form {
+.contact__form-wrapper {
   width: 60%;
   margin-bottom: 50px;
 }
 
-.contact-form label {
+.contact__label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact__input,
+.contact__textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -359,14 +355,14 @@ div.contact-form {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact__input:focus,
+.contact__textarea:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   outline: none;
 }
 
-.error-message {
+.contact__error-message {
   color: red;
   font-size: 0.875em;
   position: absolute;
@@ -375,7 +371,7 @@ div.contact-form {
   display: none;
 }
 
-.submit-btn {
+.contact__btn {
   background: #007bff;
   color: #fff;
   border: none;
@@ -386,32 +382,38 @@ div.contact-form {
   transition: background 0.3s;
 }
 
-.submit-btn:hover {
+.contact__btn:hover {
   background: #0056b3;
 }
 
-.submit-btn i {
+.contact__btn i {
   margin-right: 5px;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
 }
 
+.footer__icons-icon {
+  width: 32px;
+  aspect-ratio: 1/1;
+}
+
 @media (max-width: 600px) {
-  .contact-section {
+  .contact {
     padding: 15px;
   }
 
-  .submit-btn {
+  .contact__btn {
     width: 100%;
   }
 }
 
 @media (max-width: 980px) {
-  .projects-wrapper {
+  .portfolio__wrapper {
     grid-template-columns: 1fr;
     margin-inline: auto;
     min-width: 100%;
@@ -420,7 +422,7 @@ div.contact-form {
   .project {
     min-width: 100%;
   }
-  .project-links {
+  .project__links {
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -428,43 +430,44 @@ div.contact-form {
 }
 
 @media (max-width: 680px) {
-  .hello-text h1 {
+  .hello__name {
     font-size: 4rem;
   }
-  .hello-text h2 {
+  .hello__subtitle {
     font-size: 2rem;
   }
-  .aboutme-wrapper {
+  .about__wrapper {
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
-  .aboutme-text {
+  .about__text {
     width: 80%;
   }
 
-  .tech-row {
+  .about__tech-row {
     flex-direction: column;
     gap: 20px;
+    width: 100%;
   }
 
-  .tech-category {
+  .about__tech-category {
     width: 90%;
   }
 
-  .hobbies h1 {
+  .about__hobbies-title {
     text-align: center;
   }
 
-  .hobbies-content-wrapper {
+  .about__hobbies-wrapper {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     min-height: 90vh;
   }
 
-  .hobbies-text {
+  .about__hobbies-text {
     width: 100%;
   }
 }

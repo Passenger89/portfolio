@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
 /* NAVIGATION */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    const navLinksList = document.querySelectorAll('.nav-links a');
+    const menuToggle = document.querySelector('.nav__toggle');
+    const navLinks = document.querySelector('.nav__links');
+    const navLinksList = document.querySelectorAll('.nav__links a');
   
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* FORM */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('.contact-form');
+    const form = document.querySelector('.contact__form');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
