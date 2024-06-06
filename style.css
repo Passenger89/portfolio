@@ -164,6 +164,7 @@ nav ul li a {
   font-weight: bold;
   border: 4px solid black;
   border-radius: 50px;
+  text-decoration: none;
 }
 
 .hello__btn-button:hover, .project__btn:hover{

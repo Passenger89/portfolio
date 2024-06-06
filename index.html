@@ -15,61 +15,83 @@
     />
   </head>
   <body>
-    <nav class="nav nav--desktop">
-      <a class="nav__logo" href="#hello"><img src="./assets/William Nicholson Portfolio Logo.png" alt="logo"></a>
+    <nav class="nav nav--desktop" role="navigation">
+      <a class="nav__logo" href="#hello"
+        ><img src="./assets/William Nicholson Portfolio Logo.png" alt="logo"
+      /></a>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="#portfolio">portfolio</a>
+          <a
+            class="nav__link"
+            href="#portfolio"
+            aria-label="Portfolio"
+            aria-current="page"
+            >portfolio</a
+          >
         </li>
-        <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
         <li class="nav__item">
-          <a class="nav__link" href="#resume">resume</a>
+          <a class="nav__link" href="#about" aria-label="About">about</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#contact">contact</a>
+          <a class="nav__link" href="#resume" aria-label="Resume">resume</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact" aria-label="Contact">contact</a>
         </li>
         <li class="nav__item">
           <a
             class="nav__link"
             href="https://github.com/passenger89"
             target="_blank"
+            aria-label="GitHub"
             >github</a
           >
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#" target="_blank">linkedin</a>
+          <a class="nav__link" href="#" target="_blank" aria-label="LinkedIn"
+            >linkedin</a
+          >
         </li>
       </ul>
     </nav>
 
-    <nav class="nav nav--mobile">
-      <a class="nav__logo" href="#hello"><img src="./assets/William Nicholson Portfolio Logo.png" alt="logo"></a>
-      <div class="nav__toggle">
+    <nav class="nav nav--mobile" role="navigation">
+      <a class="nav__logo" href="#hello"
+        ><img src="./assets/William Nicholson Portfolio Logo.png" alt="logo"
+      /></a>
+      <div class="nav__toggle" aria-label="Toggle Navigation">
         <div class="nav__bar"></div>
         <div class="nav__bar"></div>
         <div class="nav__bar"></div>
       </div>
       <ul class="nav__links">
         <li class="nav__item">
-          <a class="nav__link" href="#portfolio">portfolio</a>
-        </li>
-        <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
-        <li class="nav__item">
-          <a class="nav__link" href="#resume">resume</a>
+          <a class="nav__link" href="#portfolio" aria-label="Portfolio"
+            >portfolio</a
+          >
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#contact">contact</a>
+          <a class="nav__link" href="#about" aria-label="About">about</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#resume" aria-label="Resume">resume</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact" aria-label="Contact">contact</a>
         </li>
         <li class="nav__item">
           <a
             class="nav__link"
             href="https://github.com/passenger89"
             target="_blank"
+            aria-label="GitHub"
             >github</a
           >
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#" target="_blank">linkedin</a>
+          <a class="nav__link" href="#" target="_blank" aria-label="LinkedIn"
+            >linkedin</a
+          >
         </li>
       </ul>
     </nav>
@@ -81,10 +103,9 @@
           <h2 class="hello__subtitle">I'm a full-stack developer.</h2>
         </div>
         <div class="hello__btn">
-          <button class="hello__btn-button">View Portfolio</button>
-        </div>
+          <a class="hello__btn-button" href="#portfolio" role="button" aria-label="View Portfolio">View Portfolio</a>        </div>
       </section>
-      <section id="portfolio" class="portfolio">
+      <section id="portfolio" class="portfolio" role="navigation">
         <h1 class="portfolio__title">Portfolio</h1>
 
         <div class="portfolio__wrapper">
@@ -102,12 +123,12 @@
             </div>
             <div class="project__links">
               <a href="#"
-                ><button class="project__btn">
+                ><button class="project__btn" aria-label="Try Demo">
                   Try Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i></button
               ></a>
               <a href="#"
-                ><button class="project__btn">
+                ><button class="project__btn" aria-label="View Code">
                   View Code <i class="fa-brands fa-github"></i></button
               ></a>
             </div>
@@ -126,12 +147,12 @@
             </div>
             <div class="project__links">
               <a href="#"
-                ><button class="project__btn">
+                ><button class="project__btn" aria-label="Try Demo">
                   Try Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i></button
               ></a>
               <a href="#"
-                ><button class="project__btn">
+                ><button class="project__btn" aria-label="View Code">
                   View Code <i class="fa-brands fa-github"></i></button
               ></a>
             </div>
@@ -150,12 +171,12 @@
             </div>
             <div class="project__links">
               <a href="#"
-                ><button class="project__btn">
+                ><button class="project__btn" aria-label="Try Demo">
                   Try Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i></button
               ></a>
               <a href="#"
-                ><button class="project__btn">
+                ><button class="project__btn" aria-label="View Code">
                   View Code <i class="fa-brands fa-github"></i></button
               ></a>
             </div>
@@ -174,12 +195,12 @@
             </div>
             <div class="project__links">
               <a href="#"
-                ><button class="project__btn">
+                ><button class="project__btn" aria-label="Try Demo">
                   Try Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i></button
               ></a>
               <a href="#"
-                ><button class="project__btn">
+                ><button class="project__btn" aria-label="View Code">
                   View Code <i class="fa-brands fa-github"></i></button
               ></a>
             </div>
@@ -207,10 +228,16 @@
             <div class="about__tech-category about__tech-category--frontend">
               <div class="about__tech-category-title">Front-end</div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/reactlogo2.png" alt="React logo" />
+                <img
+                  src="./assets/technologies/reactlogo2.png"
+                  alt="React logo"
+                />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/reduxlogo2.png" alt="Redux logo" />
+                <img
+                  src="./assets/technologies/reduxlogo2.png"
+                  alt="Redux logo"
+                />
               </div>
               <div class="about__tech-item">
                 <img src="./assets/technologies/htmllogo.png" alt="Html logo" />
@@ -219,10 +246,16 @@
                 <img src="./assets/technologies/csslogo.png" alt="css logo" />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/bootstraplogo.png" alt="Bootstrap logo" />
+                <img
+                  src="./assets/technologies/bootstraplogo.png"
+                  alt="Bootstrap logo"
+                />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/semantic.png" alt="Semantic UI logo" />
+                <img
+                  src="./assets/technologies/semantic.png"
+                  alt="Semantic UI logo"
+                />
               </div>
             </div>
             <div class="about__tech-category about__tech-category--backend">
@@ -231,13 +264,22 @@
                 <img src="./assets/technologies/nodelogo.png" alt="Node logo" />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/expresslogo2.png" alt="Express logo" />
+                <img
+                  src="./assets/technologies/expresslogo2.png"
+                  alt="Express logo"
+                />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/sequelize.png" alt="Sequelize logo" />
+                <img
+                  src="./assets/technologies/sequelize.png"
+                  alt="Sequelize logo"
+                />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/postgreslogo.png" alt="Postgres logo" />
+                <img
+                  src="./assets/technologies/postgreslogo.png"
+                  alt="Postgres logo"
+                />
               </div>
             </div>
             <div class="about__tech-category about__tech-category--devops">
@@ -246,13 +288,19 @@
                 <img src="./assets/technologies/gitlogo.png" alt="Git logo" />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/githublogo.png" alt="Github logo" />
+                <img
+                  src="./assets/technologies/githublogo.png"
+                  alt="Github logo"
+                />
               </div>
               <div class="about__tech-item">
                 <img src="./assets/technologies/npm.png" alt="npm logo" />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/webpack.png" alt="Webpack logo" />
+                <img
+                  src="./assets/technologies/webpack.png"
+                  alt="Webpack logo"
+                />
               </div>
               <div class="about__tech-item">
                 <img src="./assets/technologies/heroku.png" alt="Heroku logo" />
@@ -263,7 +311,10 @@
             <div class="about__tech-category about__tech-category--languages">
               <div class="about__tech-category-title">Languages</div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/jslogo.png" alt="javascript logo" />
+                <img
+                  src="./assets/technologies/jslogo.png"
+                  alt="javascript logo"
+                />
               </div>
             </div>
             <div class="about__tech-category about__tech-category--tools">
@@ -272,10 +323,16 @@
                 <img src="./assets/technologies/vscode.png" alt="vscode logo" />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/postman.png" alt="postman logo" />
+                <img
+                  src="./assets/technologies/postman.png"
+                  alt="postman logo"
+                />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/postico.png" alt="postico logo" />
+                <img
+                  src="./assets/technologies/postico.png"
+                  alt="postico logo"
+                />
               </div>
             </div>
             <div class="about__tech-category about__tech-category--testing">
@@ -287,7 +344,10 @@
                 <img src="./assets/technologies/chai.png" alt="chai logo" />
               </div>
               <div class="about__tech-item">
-                <img src="./assets/technologies/jasmine.png" alt="jasmine logo" />
+                <img
+                  src="./assets/technologies/jasmine.png"
+                  alt="jasmine logo"
+                />
               </div>
             </div>
           </div>
@@ -305,7 +365,9 @@
               <div class="about__hobbies-icon">
                 <img src="./assets/icons/travel.png" alt="" />
               </div>
-              <div class="about__hobbies-icon"><img src="./assets/icons/tv.png" alt="" /></div>
+              <div class="about__hobbies-icon">
+                <img src="./assets/icons/tv.png" alt="" />
+              </div>
             </div>
             <div class="about__hobbies-text">
               <p>
@@ -338,12 +400,24 @@
           <form class="contact__form" novalidate>
             <div class="contact__form-group">
               <label for="name" class="contact__label">Name</label>
-              <input type="text" id="name" name="name" class="contact__input" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact__input"
+                required
+              />
               <div class="contact__error-message">Please enter your name.</div>
             </div>
             <div class="contact__form-group">
               <label for="email" class="contact__label">Email</label>
-              <input type="email" id="email" name="email" class="contact__input" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact__input"
+                required
+              />
               <div class="contact__error-message">
                 Please enter a valid email address.
               </div>
@@ -357,7 +431,9 @@
                 rows="5"
                 required
               ></textarea>
-              <div class="contact__error-message">Please enter your message.</div>
+              <div class="contact__error-message">
+                Please enter your message.
+              </div>
             </div>
             <button type="submit" class="contact__btn">
               <i class="fas fa-paper-plane"></i> Send
@@ -370,7 +446,11 @@
       <div class="footer__wrapper">
         <div class="footer__icons">
           <a href="https://github.com/passenger89" target="_blank">
-            <img class="footer__icons-icon" src="./assets/technologies/githublogo.png" alt="GitHub Icon" />
+            <img
+              class="footer__icons-icon"
+              src="./assets/technologies/githublogo.png"
+              alt="GitHub Icon"
+            />
           </a>
         </div>
         <div class="footer__text">
