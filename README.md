@@ -39,4 +39,4 @@ My journey into web development has been nothing short of exhilarating. From cra
 
 ### Let's Connect!
 
-I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out to me via [email](mailto:your.email@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/yourusername). Let's build something amazing together!
+I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out to me via [email](mailto:nicho268@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/yourusername). Let's build something amazing together!
