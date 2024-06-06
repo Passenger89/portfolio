@@ -62,6 +62,14 @@ nav ul li a {
   color: inherit;
 }
 
+.nav--desktop .nav__item:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border-radius: 50px;
+
+  transition: all .4s ease;
+}
+
 /* Hide mobile nav on desktop */
 .nav--mobile {
   display: none;
@@ -158,6 +166,13 @@ nav ul li a {
   border-radius: 50px;
 }
 
+.hello__btn-button:hover, .project__btn:hover{
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: all .4s ease;
+}
+
 .portfolio {
   flex-direction: column;
 }
@@ -199,6 +214,10 @@ nav ul li a {
   display: flex;
   justify-content: space-around;
   min-width: 80%;
+}
+
+.project__links a {
+  text-decoration: none;
 }
 
 .project__btn {
