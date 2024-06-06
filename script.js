@@ -67,12 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function hideError(input) {
         const formGroup = input.parentElement;
-        const errorMessage = formGroup.querySelector('.error-message');
+        const errorMessage = formGroup.querySelector('.contact__error-message');
         errorMessage.style.display = 'none';
     }
 
     function validateEmail(email) {
         const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        return re.test(email);
+        return !re.test(email);
     }
 });

@@ -450,7 +450,7 @@ nav ul li a {
 }
 
 @media (max-width: 680px) {
-  .hello__name {
+  #hello__name, .portfolio__title, .about__title, .about__hobbies-title, .resume__title, .contact__title {
     font-size: 4rem;
   }
   .hello__subtitle {
