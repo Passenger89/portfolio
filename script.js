@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showError(input, message) {
         const formGroup = input.parentElement;
-        const errorMessage = formGroup.querySelector('.error-message');
+        const errorMessage = formGroup.querySelector('.contact__error-message');
         errorMessage.textContent = message;
         errorMessage.style.display = 'block';
     }
